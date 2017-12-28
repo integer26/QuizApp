@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="metallica">Da quanti componenti è formata la band Metallica?</string>
+    <string name="pinkfloyd">Quale di queste canzoni appartiene ai Pinkfloyd?</string>
+    <string name="eagles">Chi era il batterista degli Eagles?</string>
+    <string name="genesis">Quale di queste canzoni appartiene ai Genesis?</string>
+    <string name="nirvana">In che anno si sono formati i Nirvana?</string>
+    <string name="rock_genere">Quali di questi gruppi non appartiene al genere Rock?</string>
+    <string name="Zeppelin">Quali di queste canzoni appartiene ai Led Zeppelin?</string>
+    <string name="elvis">Con quale soprannome è passato alla storia l\'unico e inimitabile Elvis Presley?</string>
+    <string name="beatles">Qual è il singolo dei The Beatles ad aver venduto più in assoluto?</string>
+    <string name="freddie">Il mitico Freddie Mercury, fondatore dei Queen, è nato nel 1970 a…</string>
+    <string name="u2">Gli U2 prima degli U2: come si chiamava in origine la band di Bono Vox?</string>
+    <string name="pearl">Nel 1991 esce il primo album dei Pearl Jam, che si intitola...</string>
+</resources>
