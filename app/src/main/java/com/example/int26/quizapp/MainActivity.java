@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             nMembri.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -64,11 +63,9 @@ public class MainActivity extends AppCompatActivity {
         //Controllo i vari casi che si possono presentare con le checkBox
         if(checked=wrong1.isChecked()){
             wrong1.setTextColor(Color.RED);
-            corrette--;
         }
         if(checked=wrong2.isChecked()){
             wrong2.setTextColor(Color.RED);
-            corrette--;
         }
         if(checked=right1.isChecked()){
             right1.setTextColor(Color.GREEN);
@@ -104,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -126,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -148,7 +143,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -170,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -192,7 +185,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -214,7 +206,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -236,7 +227,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -258,7 +248,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -280,7 +269,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -302,7 +290,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
 
             radio.setTextColor(Color.RED);
-            corrette--;
         }
     }
 
@@ -310,18 +297,17 @@ public class MainActivity extends AppCompatActivity {
 
         TextView recap = findViewById(R.id.recap);
 
-        if(corrette < 0){
+        if(corrette < 3){
             testoRecap = "Il tuo punteggio è: " + corrette + "\nNon sai Praticamente niente riguardo al Rock!";
-        }else if(corrette > 0 && corrette <= 5){
+        }else if(corrette >= 3 && corrette <= 6){
             testoRecap = "Il tuo punteggio è: "+ corrette + "\nPuoi fare di meglio!";
-        }else if(corrette > 5 && corrette < 10){
+        }else if(corrette > 6 && corrette < 10){
             testoRecap = "Il tuo punteggio è: "+ corrette + "\nBen Fatto!";
         }else if(corrette >=10){
             testoRecap = "Il tuo punteggio è: "+ corrette + "\nGrandioso, sei informatissimo sul mondo Rock!";
         }
 
         recap.setText(testoRecap);
-
     }
 
     public void inviaEmail(View view) {
