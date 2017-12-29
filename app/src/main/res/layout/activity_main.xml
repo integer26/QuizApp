@@ -26,32 +26,55 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/metallica"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/sbMet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sbMet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/corrMet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkMetallica"
+                android:text="Verifica!" />
+        </RelativeLayout>
 
         <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/pinkfloyd"
-        android:scaleType="centerCrop"
-        android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pinkfloyd"
             />
 
         <TextView
@@ -62,32 +85,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/pink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Atlas"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbPink2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The city of blinding lights "
+                    />
+                <RadioButton
+                    android:id="@+id/corrPink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Young Lust"
+                    />
+                <RadioButton
+                    android:id="@+id/sbPink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The day that never comes"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkPink"
+                android:text="Verifica!"
                 />
-        </RadioGroup>
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/eagles"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/eagles"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -96,32 +143,56 @@
             android:text="@string/eagles"
             android:textSize="20sp"
             />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/eagles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbEag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nick Mason"
+                    />
+                <RadioButton
+                    android:id="@+id/corrEag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don Henley"
+                    />
+                <RadioButton
+                    android:id="@+id/sbEag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joey Jordison"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkEagles"
+                android:text="Verifica!"
                 />
-        </RadioGroup>
-
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/genesis"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/genesis"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -131,32 +202,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/genesis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbGen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surfing with the alien"
+                    />
+                <RadioButton
+                    android:id="@+id/sbGen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    />
+                <RadioButton
+                    android:id="@+id/corrGen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mama"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkGenesis"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/nirvana"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/nirvana"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -165,33 +260,55 @@
             android:text="@string/nirvana"
             android:textSize="20sp"
             />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/nirvana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
 
+                <RadioButton
+                    android:id="@+id/corrNir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1987"
+                    />
+                <RadioButton
+                    android:id="@+id/sbNir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1997"
+                    />
+                <RadioButton
+                    android:id="@+id/sbNir2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1990"
+                    />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkNirvana"
+                android:text="Verifica!"/>
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/rock"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/rock"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -200,33 +317,55 @@
             android:text="@string/rock_genere"
             android:textSize="20sp"
             />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/rock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbRock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC/DC"
+                    />
+                <RadioButton
+                    android:id="@+id/corrRock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weather Report"
+                    />
+                <RadioButton
+                    android:id="@+id/sbRock2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deep Purple"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkRock"
+                android:text="Verifica!"/>
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/zeppelin"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/zeppelin"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -236,32 +375,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/led"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/corrZepp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kashmir"
+                    />
+                <RadioButton
+                    android:id="@+id/sbZepp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mama Said"
+                    />
+                <RadioButton
+                    android:id="@+id/sbZepp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samba Pa Ti"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkLedZeppelin"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/elvis"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/elvis"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -270,33 +433,55 @@
             android:text="@string/elvis"
             android:textSize="20sp"
             />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/elvis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/sbElv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Beast"
+                    />
+                <RadioButton
+                    android:id="@+id/sbElv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The One"
+                    />
+                <RadioButton
+                    android:id="@+id/corrElv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The King"
+                    />
+            </RadioGroup>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkElvis"
+                android:text="Verifica!"/>
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/beatles"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/beatles"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -306,32 +491,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/beatles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All You Need Is Love"
+                    />
+                <RadioButton
+                    android:id="@+id/corrBeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She Loves You"
+                    />
+                <RadioButton
+                    android:id="@+id/sbBeat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hey Jude"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkBeatles"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/freddie"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/freddie"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -341,32 +550,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/queen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/corrQue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zanzibar"
+                    />
+                <RadioButton
+                    android:id="@+id/sbQue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="London"
+                    />
+                <RadioButton
+                    android:id="@+id/sbQue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liverpool"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkQueen"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/u2"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/u2"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -376,32 +609,56 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/u2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/sbU22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Young"
+                    />
+                <RadioButton
+                    android:id="@+id/sbU2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pectoralz"
+                    />
+                <RadioButton
+                    android:id="@+id/corrU2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                />
-        </RadioGroup>
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkQueen"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:paddingTop="16dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pearljam3"
-            android:paddingTop="16dp"/>
+            android:src="@drawable/pearljam3"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -411,47 +668,85 @@
             android:textSize="20sp"
             />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <RadioButton
+            <RadioGroup
+                android:id="@+id/jam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"/>
-            <RadioButton
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/corrJam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ten"
+                    />
+                <RadioButton
+                    android:id="@+id/sbJam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two"
+                    />
+                <RadioButton
+                    android:id="@+id/sbJam2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nine"
+                    />
+            </RadioGroup>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"/>
-            <RadioButton
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:onClick="checkQueen"
+                android:text="Verifica!"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/scopri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="16dp"
+                android:onClick="checkMetallica"
+                android:text="Scopri il tuo Punteggio"/>
+
+            <TextView
+                android:id="@+id/recap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mail"
+                android:layout_below="@+id/scopri"
+                android:layout_centerInParent="true"
+                android:padding="16dp"
+                android:text=""
                 />
-        </RadioGroup>
 
-        <Button
-            android:id="@+id/scopri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="Scopri il tuo Punteggio" />
-
-        <TextView
-            android:id="@+id/recap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:padding="16dp"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Invia tramite mail"
-            android:padding="16dp"
-            android:layout_gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scopri"
+                android:layout_centerInParent="true"
+                android:layout_margin="16dp"
+                android:text="Invia tramite mail"
+                />
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>
