@@ -9,10 +9,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <ImageView
+            android:id="@+id/metimm"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
@@ -34,12 +36,12 @@
             <EditText
                 android:id="@+id/metallica"
                 android:layout_width="wrap_content"
-                android:minWidth="200dp"
                 android:layout_height="wrap_content"
-                android:hint="10"
                 android:layout_margin="16dp"
-                android:inputType="number"
                 android:cursorVisible="false"
+                android:hint="@string/metallicahint"
+                android:inputType="number"
+                android:minWidth="200dp"
                 />
 
             <Button
@@ -50,7 +52,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="17dp"
                 android:onClick="checkMetallica"
-                android:text="Verifica!" />
+                android:text="@string/buttonText" />
         </RelativeLayout>
 
         <ImageView
@@ -74,58 +76,55 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-           <CheckBox
-               android:id="@+id/sbPink"
-               android:layout_width="wrap_content"
-               android:layout_height="match_parent"
-               android:text="Yellow"
-               android:layout_marginLeft="16dp"
-               />
+            <CheckBox
+                android:id="@+id/sbPink"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:text="@string/sbPink" />
             <CheckBox
                 android:id="@+id/corrPink1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Pigs"
                 android:layout_below="@+id/sbPink"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/corrPinkOne"
                 />
             <CheckBox
                 android:id="@+id/corrPink"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Time"
                 android:layout_below="@+id/corrPink1"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/corrPinkTwo"
                 />
             <CheckBox
                 android:id="@+id/sbPink2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="In the city of blinding lights"
                 android:layout_below="@+id/corrPink"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/sbPinkTwo"
                 />
 
             <Button
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkPink"
-                android:text="Verifica!"
+                android:text="@string/buttonText"
                 />
         </RelativeLayout>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:paddingTop="16dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/eagles" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/eagles" />
 
         <TextView
             android:layout_width="match_parent"
@@ -152,19 +151,19 @@
                     android:id="@+id/sbEag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nick Mason"
+                    android:text="@string/sbEag"
                     />
                 <RadioButton
                     android:id="@+id/corrEag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Don Henley"
+                    android:text="@string/corrEag"
                     />
                 <RadioButton
                     android:id="@+id/sbEag2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Joey Jordison"
+                    android:text="@string/sbEagTwo"
                     />
             </RadioGroup>
 
@@ -172,11 +171,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkEagles"
-                android:text="Verifica!"
+                android:text="@string/buttonText"
                 />
         </RelativeLayout>
 
@@ -211,19 +210,19 @@
                     android:id="@+id/sbGen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Surfing with the alien"
+                    android:text="@string/sbGen"
                     />
                 <RadioButton
                     android:id="@+id/sbGen2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Time"
+                    android:text="@string/sbGenTwo"
                     />
                 <RadioButton
                     android:id="@+id/corrGen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mama"
+                    android:text="@string/rightGen"
                     />
             </RadioGroup>
 
@@ -231,11 +230,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkGenesis"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
@@ -270,19 +269,19 @@
                     android:id="@+id/corrNir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1987"
+                    android:text="@string/rightNir"
                     />
                 <RadioButton
                     android:id="@+id/sbNir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1997"
+                    android:text="@string/sbNir"
                     />
                 <RadioButton
                     android:id="@+id/sbNir2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1990"
+                    android:text="@string/sbNirTwo"
                     />
             </RadioGroup>
 
@@ -294,7 +293,7 @@
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkNirvana"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
         </RelativeLayout>
 
         <ImageView
@@ -328,19 +327,19 @@
                     android:id="@+id/sbRock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AC/DC"
+                    android:text="@string/ac_dc"
                     />
                 <RadioButton
                     android:id="@+id/corrRock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weather Report"
+                    android:text="@string/weather_report"
                     />
                 <RadioButton
                     android:id="@+id/sbRock2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Deep Purple"
+                    android:text="@string/deep_purple"
                     />
             </RadioGroup>
 
@@ -348,11 +347,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkRock"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
         </RelativeLayout>
 
         <ImageView
@@ -387,19 +386,19 @@
                     android:id="@+id/corrZepp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kashmir"
+                    android:text="@string/rightLed"
                     />
                 <RadioButton
                     android:id="@+id/sbZepp2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mama Said"
+                    android:text="@string/wrongLed"
                     />
                 <RadioButton
                     android:id="@+id/sbZepp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Samba Pa Ti"
+                    android:text="@string/wrongLedTwo"
                     />
             </RadioGroup>
 
@@ -407,11 +406,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkLedZeppelin"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
@@ -446,19 +445,19 @@
                     android:id="@+id/sbElv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The Beast"
+                    android:text="@string/wrongElvis"
                     />
                 <RadioButton
                     android:id="@+id/sbElv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The One"
+                    android:text="@string/wrongElvisTwo"
                     />
                 <RadioButton
                     android:id="@+id/corrElv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The King"
+                    android:text="@string/rightElvis"
                     />
             </RadioGroup>
 
@@ -466,11 +465,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkElvis"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
         </RelativeLayout>
 
         <ImageView
@@ -505,19 +504,19 @@
                     android:id="@+id/sbBeat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All You Need Is Love"
+                    android:text="@string/wrongBeat"
                     />
                 <RadioButton
                     android:id="@+id/corrBeat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="She Loves You"
+                    android:text="@string/rightBeat"
                     />
                 <RadioButton
                     android:id="@+id/sbBeat2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hey Jude"
+                    android:text="@string/wrongBeatTwo"
                     />
             </RadioGroup>
 
@@ -525,11 +524,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkBeatles"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
@@ -565,19 +564,19 @@
                     android:id="@+id/corrQue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Zanzibar"
+                    android:text="@string/corrQueen"
                     />
                 <RadioButton
                     android:id="@+id/sbQue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="London"
+                    android:text="@string/wrongQueen"
                     />
                 <RadioButton
                     android:id="@+id/sbQue2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Liverpool"
+                    android:text="@string/wrongQueenTwo"
                     />
             </RadioGroup>
 
@@ -585,11 +584,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkQueen"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
@@ -625,19 +624,19 @@
                     android:id="@+id/sbU22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Young"
+                    android:text="@string/wrongU2"
                     />
                 <RadioButton
                     android:id="@+id/sbU2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pectoralz"
+                    android:text="@string/wrongU2Two"
                     />
                 <RadioButton
                     android:id="@+id/corrU2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Feedback"
+                    android:text="@string/rightU2"
                     />
             </RadioGroup>
 
@@ -645,11 +644,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkU2"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
@@ -685,19 +684,19 @@
                     android:id="@+id/corrJam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ten"
+                    android:text="@string/rightJam"
                     />
                 <RadioButton
                     android:id="@+id/sbJam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Two"
+                    android:text="@string/wrongJam"
                     />
                 <RadioButton
                     android:id="@+id/sbJam2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nine"
+                    android:text="@string/worngJamTwo"
                     />
             </RadioGroup>
 
@@ -705,27 +704,27 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:onClick="checkPearlJam"
-                android:text="Verifica!"/>
+                android:text="@string/buttonText" />
 
         </RelativeLayout>
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <Button
-                style="@style/Widget.AppCompat.Button.Colored"
                 android:id="@+id/scopri"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="Scopri il tuo Punteggio"
-                android:onClick="scopri"/>
+                android:onClick="scopri"
+                android:text="@string/PointButton" />
 
             <TextView
                 android:id="@+id/recap"
@@ -738,15 +737,15 @@
                 />
 
             <Button
-                style="@style/Widget.AppCompat.Button.Colored"
                 android:id="@+id/mail"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="Invia tramite mail"
                 android:onClick="inviaEmail"
+                android:text="@string/emailButton"
                 />
-</LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

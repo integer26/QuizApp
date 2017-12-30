@@ -1,11 +1,11 @@
 package com.example.int26.quizapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
@@ -13,10 +13,13 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Variabili globali
+    /**
+     * Global Vars
+     */
 
     int corrette = 0;
     String testoRecap = "";
@@ -33,11 +36,16 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
+    /**
+     * This method allows the user to answer by text (number) input
+     *
+     * @param view
+     */
+
     public void checkMetallica(View view)
 
     {
         EditText nMembri = findViewById(R.id.metallica);
-
         String nome = nMembri.getText().toString();
 
         if(nome.equals("4")){
@@ -47,7 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
             nMembri.setTextColor(Color.RED);
         }
+
     }
+
+    /**
+     * This method allows the user to answer by checking multiple correct answers
+     * @param view
+     */
 
     public void checkPink(View view)
 
@@ -60,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         boolean checked;
         boolean checked2;
 
-        //Controllo i vari casi che si possono presentare con le checkBox
         if(checked=wrong1.isChecked()){
             wrong1.setTextColor(Color.RED);
         }
@@ -70,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         if(checked=right1.isChecked()){
             right1.setTextColor(Color.GREEN);
         }
-            if(checked=right2.isChecked()){
+        if (checked = right2.isChecked()){
             right2.setTextColor(Color.GREEN);
         }
 
@@ -83,13 +96,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkEagles(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.eagles);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrEag);
@@ -104,13 +125,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkGenesis(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.genesis);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrGen);
@@ -125,13 +154,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkNirvana(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.nirvana);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrNir);
@@ -146,13 +183,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkRock(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.rock);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrRock);
@@ -167,13 +212,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkLedZeppelin(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.led);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrZepp);
@@ -188,13 +241,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkElvis(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.elvis);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrElv);
@@ -209,13 +270,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
+
     public void checkBeatles(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.beatles);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
+
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrBeat);
@@ -230,13 +301,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
+
     public void checkQueen(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.queen);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrQue);
@@ -251,13 +331,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
     public void checkU2(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.u2);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrU2);
@@ -272,13 +360,22 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method allows The user to answer by checking a radio button so a single possible correct answer
+     * @param view
+     */
+
     public void checkPearlJam(View view)
 
     {
-        //Trovo il gruppo di radio
+        /**
+         * I find the radio group
+         */
         RadioGroup rgPink = findViewById(R.id.jam);
 
-        //Assegno ad un int l'id del button checkato
+        /**
+         * The int checked has the id of checked RadioButto
+         */
         int checked = rgPink.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrJam);
@@ -292,6 +389,11 @@ public class MainActivity extends AppCompatActivity {
             radio.setTextColor(Color.RED);
         }
     }
+
+    /**
+     * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Long Length
+     * @param view
+     */
 
     public void scopri(View view){
 
@@ -308,8 +410,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         recap.setText(testoRecap);
+
+        Context context = getApplicationContext();
+        CharSequence text = testoRecap;
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
+    /**
+     * When the button is clicked it lounces an Intent that opens gmail (or only an email app) and allows the user to send the recap content via mail
+     * @param view
+     */
     public void inviaEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this

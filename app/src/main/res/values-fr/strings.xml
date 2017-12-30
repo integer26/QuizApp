@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="metallica">Combien de composants la bande Metallica est-elle formée?</string>
+    <string name="pinkfloyd">Laquelle de ces chansons appartient à Pink Floyd?</string>
+    <string name="eagles">Qui était le batteur des Eagles?</string>
+    <string name="genesis">Laquelle de ces chansons appartient à Genesis?</string>
+    <string name="nirvana">En quelle année Nirvana s\'est-il formé?</string>
+    <string name="rock_genere">Lequel de ces groupes n\'appartient pas au genre Rock?</string>
+    <string name="Zeppelin">Laquelle de ces chansons appartient à Led Zeppelin?</string>
+    <string name="elvis">Avec quel surnom a l\'unique et inimitable Elvis Presley entré dans l\'histoire?</string>
+    <string name="beatles">Quel est le single des Beatles à avoir vendu le plus?</string>
+    <string name="freddie">Le légendaire Freddie Mercury, fondateur de Queen, est né en 1970 à ...</string>
+    <string name="u2">U2 avant U2: quel était le nom original du groupe Bono Vox?</string>
+    <string name="pearl">En 1991, il sort le premier album de Pearl Jam, intitulé ...</string>
+    <string name="buttonText">Vérifier!</string>
+    <string name="PointButton">Découvrez votre score!</string>
+    <string name="emailButton">"Envoyé par email "</string>
+    <string name="wrongQueen">Londres</string>
+</resources>

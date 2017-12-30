@@ -1,15 +1,53 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="metallica">Da quanti componenti è formata la band Metallica?</string>
-    <string name="pinkfloyd">Quale di queste canzoni appartiene ai Pinkfloyd?</string>
-    <string name="eagles">Chi era il batterista degli Eagles?</string>
-    <string name="genesis">Quale di queste canzoni appartiene ai Genesis?</string>
-    <string name="nirvana">In che anno si sono formati i Nirvana?</string>
-    <string name="rock_genere">Quali di questi gruppi non appartiene al genere Rock?</string>
-    <string name="Zeppelin">Quali di queste canzoni appartiene ai Led Zeppelin?</string>
-    <string name="elvis">Con quale soprannome è passato alla storia l\'unico e inimitabile Elvis Presley?</string>
-    <string name="beatles">Qual è il singolo dei The Beatles ad aver venduto più in assoluto?</string>
-    <string name="freddie">Il mitico Freddie Mercury, fondatore dei Queen, è nato nel 1970 a…</string>
-    <string name="u2">Gli U2 prima degli U2: come si chiamava in origine la band di Bono Vox?</string>
-    <string name="pearl">Nel 1991 esce il primo album dei Pearl Jam, che si intitola...</string>
+    <string name="metallica">How many components is the Metallica band formed?</string>
+    <string name="pinkfloyd">Which of these songs belongs to Pink Floyd?</string>
+    <string name="eagles">Who was the Eagles drummer?</string>
+    <string name="genesis">Which of these songs belongs to Genesis?</string>
+    <string name="nirvana">What year were Nirvana formed?</string>
+    <string name="rock_genere">Which of these groups does not belong to the Rock genre?</string>
+    <string name="Zeppelin">Which of these songs belongs to Led Zeppelin?</string>
+    <string name="elvis">With what nickname has the unique and inimitable Elvis Presley gone down in history?</string>
+    <string name="beatles">What is the single of The Beatles to have sold the most ever?</string>
+    <string name="freddie">The legendary Freddie Mercury, founder of Queen, was born in 1970 in ...</string>
+    <string name="u2">U2 before U2: what was the original name of the Bono Vox band?</string>
+    <string name="pearl">In 1991 he released the first album of Pearl Jam, which is titled ...</string>
+    <string name="metallicahint" translatable="false">10</string>
+    <string name="buttonText">Check!</string>
+    <string name="PointButton">Discover your score!</string>
+    <string name="emailButton">Send by email</string>
+    <string name="sbPink" translatable="false">Yellow</string>
+    <string name="corrPinkOne" translatable="false">Pigs</string>
+    <string name="corrPinkTwo" translatable="false">Time</string>
+    <string name="sbPinkTwo" translatable="false">In the city of blinding lights</string>
+    <string name="sbEag" translatable="false">Nick Mason</string>
+    <string name="corrEag" translatable="false">Don Henley</string>
+    <string name="sbEagTwo" translatable="false">Joey Jordison</string>
+    <string name="sbGen" translatable="false">Surfing with the alien</string>
+    <string name="sbGenTwo" translatable="false">Time</string>
+    <string name="rightGen" translatable="false">Mama</string>
+    <string name="rightNir" translatable="false">1987</string>
+    <string name="sbNir" translatable="false">1997</string>
+    <string name="sbNirTwo" translatable="false">1990</string>
+    <string name="ac_dc" translatable="false">AC/DC</string>
+    <string name="weather_report" translatable="false">Weather Report</string>
+    <string name="deep_purple" translatable="false">Deep Purple</string>
+    <string name="rightLed" translatable="false">Kashmir</string>
+    <string name="wrongLed" translatable="false">Mama Said</string>
+    <string name="wrongLedTwo" translatable="false">Samba Pa Ti</string>
+    <string name="wrongElvis" translatable="false">The Beast</string>
+    <string name="wrongElvisTwo" translatable="false">The One</string>
+    <string name="rightElvis" translatable="false">The King</string>
+    <string name="wrongBeat" translatable="false">All You Need Is Love</string>
+    <string name="rightBeat" translatable="false">She Loves You</string>
+    <string name="wrongBeatTwo" translatable="false">Hey Jude</string>
+    <string name="corrQueen" translatable="false">Zanzibar</string>
+    <string name="wrongQueen">London</string>
+    <string name="wrongQueenTwo" translatable="false">Liverpool</string>
+    <string name="wrongU2" translatable="false">Young</string>
+    <string name="wrongU2Two" translatable="false">Pectoralz</string>
+    <string name="rightU2" translatable="false">Feedback</string>
+    <string name="rightJam" translatable="false">Ten</string>
+    <string name="wrongJam" translatable="false">Two</string>
+    <string name="worngJamTwo" translatable="false">Nine</string>
 </resources>
