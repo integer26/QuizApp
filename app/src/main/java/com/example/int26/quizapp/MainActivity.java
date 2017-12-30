@@ -313,7 +313,6 @@ public class MainActivity extends AppCompatActivity {
     public void inviaEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, "giorgio.schirano@gmail.com");
         intent.putExtra(Intent.EXTRA_SUBJECT, "Risultati AppQuiz");
         intent.putExtra(Intent.EXTRA_TEXT, testoRecap);
         if (intent.resolveActivity(getPackageManager()) != null) {
