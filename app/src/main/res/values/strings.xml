@@ -55,4 +55,5 @@
     <string name="lowScore">\nCan you do any better!</string>
     <string name="midScore">\nWell done!</string>
     <string name="highScore">\nGreat, you are very well informed about the Rock world!</string>
+    <string name="results">Results of RockQuiz</string>
 </resources>

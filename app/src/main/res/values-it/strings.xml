@@ -22,4 +22,5 @@
     <string name="midScore">\nBen fatto!</string>
     <string name="lowScore">\nPuoi fare di meglio!</string>
     <string name="highScore">\nGrandioso, sei informatissimo sul mondo Rock!</string>
+    <string name="results">Risultati del RockQuiz</string>
 </resources>

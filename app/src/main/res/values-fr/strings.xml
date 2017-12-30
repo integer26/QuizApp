@@ -22,4 +22,6 @@
     <string name="midScore">\nBien joué!</string>
     <string name="highScore">\nGénial, vous êtes très au courant du monde Rock!</string>
     <string name="lowScore">\nPouvez-vous faire mieux!</string>
+    <string name="results">Résultats de RockWiz</string>
+
 </resources>

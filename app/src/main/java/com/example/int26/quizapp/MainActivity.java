@@ -18,11 +18,28 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     /**
-     * Global Vars
+     * Global Vars declarations
      */
 
     int corrette = 0;
     String testoRecap = "";
+    EditText nMembri;
+    CheckBox wrong1;
+    CheckBox wrong2;
+    CheckBox right1;
+    CheckBox right2;
+    RadioGroup rgPink;
+    RadioGroup rgGen;
+    RadioGroup rgNir;
+    RadioGroup rgRock;
+    RadioGroup rgLed;
+    RadioGroup rgElvis;
+    RadioGroup rgBeat;
+    RadioGroup rgQueen;
+    RadioGroup rgU2;
+    RadioGroup rgJam;
+    TextView recap;
+
 
 
     @Override
@@ -34,27 +51,29 @@ public class MainActivity extends AppCompatActivity {
          * Prevent the keyboard to pop up automatically
          */
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        //View Declarations in onCreate to improve CPU cycles
+        nMembri = findViewById(R.id.metallica);
+        wrong1 = findViewById(R.id.sbPink);
+        wrong2 = findViewById(R.id.sbPink2);
+        right1 = findViewById(R.id.corrPink);
+        right2 = findViewById(R.id.corrPink1);
+        rgPink = findViewById(R.id.eagles);
+        rgGen = findViewById(R.id.genesis);
+        rgNir = findViewById(R.id.nirvana);
+        rgRock = findViewById(R.id.rock);
+        rgLed = findViewById(R.id.led);
+        rgElvis = findViewById(R.id.elvis);
+        rgBeat = findViewById(R.id.beatles);
+        rgQueen = findViewById(R.id.queen);
+        rgU2 = findViewById(R.id.u2);
+        rgJam = findViewById(R.id.jam);
+        recap = findViewById(R.id.recap);
+
+
+
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
-        // Save UI state changes to the savedInstanceState.
-        // This bundle will be passed to onCreate if the process is
-        // killed and restarted.
-        savedInstanceState.putInt("corrette", corrette);
-        savedInstanceState.putString("MyString", "Welcome back to Android");
-        // etc.
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        // Restore UI state from the savedInstanceState.
-        // This bundle has also been passed to onCreate.
-        corrette = savedInstanceState.getInt("corrette");
-
-    }
 
     /**
      * This method allows the user to answer by text (number) input
@@ -65,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
     public void checkMetallica(View view)
 
     {
-        EditText nMembri = findViewById(R.id.metallica);
         String nome = nMembri.getText().toString();
 
         if(nome.equals("4")){
@@ -86,10 +104,6 @@ public class MainActivity extends AppCompatActivity {
     public void checkPink(View view)
 
     {
-        CheckBox wrong1 = findViewById(R.id.sbPink);
-        CheckBox wrong2 = findViewById(R.id.sbPink2);
-        CheckBox right1 = findViewById(R.id.corrPink);
-        CheckBox right2 = findViewById(R.id.corrPink1);
 
         boolean checked;
         boolean checked2;
@@ -124,11 +138,6 @@ public class MainActivity extends AppCompatActivity {
 
     {
         /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.eagles);
-
-        /**
          * The int checked has the id of checked RadioButto
          */
         int checked = rgPink.getCheckedRadioButtonId();
@@ -152,15 +161,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkGenesis(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.genesis);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgGen.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrGen);
         RadioButton radio = findViewById(checked);
@@ -181,15 +186,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkNirvana(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.nirvana);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgNir.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrNir);
         RadioButton radio = findViewById(checked);
@@ -210,15 +211,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkRock(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.rock);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgRock.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrRock);
         RadioButton radio = findViewById(checked);
@@ -240,14 +237,9 @@ public class MainActivity extends AppCompatActivity {
 
     {
         /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.led);
-
-        /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgLed.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrZepp);
         RadioButton radio = findViewById(checked);
@@ -268,15 +260,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkElvis(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.elvis);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgElvis.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrElv);
         RadioButton radio = findViewById(checked);
@@ -299,15 +287,10 @@ public class MainActivity extends AppCompatActivity {
 
     {
         /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.beatles);
-
-        /**
          * The int checked has the id of checked RadioButto
          */
 
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgBeat.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrBeat);
         RadioButton radio = findViewById(checked);
@@ -329,15 +312,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkQueen(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.queen);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgQueen.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrQue);
         RadioButton radio = findViewById(checked);
@@ -358,15 +337,11 @@ public class MainActivity extends AppCompatActivity {
     public void checkU2(View view)
 
     {
-        /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.u2);
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgU2.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrU2);
         RadioButton radio = findViewById(checked);
@@ -389,14 +364,9 @@ public class MainActivity extends AppCompatActivity {
 
     {
         /**
-         * I find the radio group
-         */
-        RadioGroup rgPink = findViewById(R.id.jam);
-
-        /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checked = rgJam.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrJam);
         RadioButton radio = findViewById(checked);
@@ -416,8 +386,6 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void scopri(View view){
-
-        TextView recap = findViewById(R.id.recap);
 
         if(corrette < 3){
             testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
@@ -446,7 +414,7 @@ public class MainActivity extends AppCompatActivity {
     public void inviaEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Risultati AppQuiz");
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.results));
         intent.putExtra(Intent.EXTRA_TEXT, testoRecap);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
