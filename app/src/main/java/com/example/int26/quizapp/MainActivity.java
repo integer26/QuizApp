@@ -302,7 +302,7 @@ public class MainActivity extends AppCompatActivity {
         }else if(corrette >= 3 && corrette <= 6){
             testoRecap = "Il tuo punteggio è: "+ corrette + "\nPuoi fare di meglio!";
         }else if(corrette > 6 && corrette < 10){
-            testoRecap = "Il tuo punteggio è: "+ corrette + "\nBen Fatto!";
+            testoRecap = "Il tuo punteggio è: "+ corrette + "\nBen fatto!";
         }else if(corrette >=10){
             testoRecap = "Il tuo punteggio è: "+ corrette + "\nGrandioso, sei informatissimo sul mondo Rock!";
         }
