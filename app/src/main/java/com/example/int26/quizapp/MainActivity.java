@@ -391,7 +391,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Long Length
+     * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Short Length
      * @param view
      */
 
@@ -400,20 +400,20 @@ public class MainActivity extends AppCompatActivity {
         TextView recap = findViewById(R.id.recap);
 
         if(corrette < 3){
-            testoRecap = "Il tuo punteggio è: " + corrette + "\nNon sai Praticamente niente riguardo al Rock!";
+            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
         }else if(corrette >= 3 && corrette <= 6){
-            testoRecap = "Il tuo punteggio è: "+ corrette + "\nPuoi fare di meglio!";
+            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.lowScore);
         }else if(corrette > 6 && corrette < 10){
-            testoRecap = "Il tuo punteggio è: "+ corrette + "\nBen fatto!";
+            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.midScore);
         }else if(corrette >=10){
-            testoRecap = "Il tuo punteggio è: "+ corrette + "\nGrandioso, sei informatissimo sul mondo Rock!";
+            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.highScore);
         }
 
         recap.setText(testoRecap);
 
         Context context = getApplicationContext();
         CharSequence text = testoRecap;
-        int duration = Toast.LENGTH_LONG;
+        int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();

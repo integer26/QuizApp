@@ -50,4 +50,9 @@
     <string name="rightJam" translatable="false">Ten</string>
     <string name="wrongJam" translatable="false">Two</string>
     <string name="worngJamTwo" translatable="false">Nine</string>
+    <string name="score">Your score is: </string>
+    <string name="zeroScore">\nYou do not know anything about Rock! </string>
+    <string name="lowScore">\nCan you do any better!</string>
+    <string name="midScore">\nWell done!</string>
+    <string name="highScore">\nGreat, you are very well informed about the Rock world!</string>
 </resources>

@@ -17,4 +17,9 @@
     <string name="PointButton">Découvrez votre score!</string>
     <string name="emailButton">"Envoyé par email "</string>
     <string name="wrongQueen">Londres</string>
+    <string name="score">Votre score est: </string>
+    <string name="zeroScore">\nTu ne sais rien sur Rock!</string>
+    <string name="midScore">\nBien joué!</string>
+    <string name="highScore">\nGénial, vous êtes très au courant du monde Rock!</string>
+    <string name="lowScore">\nPouvez-vous faire mieux!</string>
 </resources>
