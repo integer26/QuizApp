@@ -56,4 +56,9 @@
     <string name="midScore">\nWell done!</string>
     <string name="highScore">\nGreat, you are very well informed about the Rock world!</string>
     <string name="results">Results of RockQuiz</string>
+    <string name="rush">What is the latest Rush album?</string>
+    <string name="_2112" translatable="false">2112</string>
+    <string name="signals" translatable="false">Signals</string>
+    <string name="clockwork_angels" translatable="false">Clockwork Angels</string>
+    <string name="description_image">An image for the Band</string>
 </resources>

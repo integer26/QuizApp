@@ -23,5 +23,7 @@
     <string name="highScore">\nGénial, vous êtes très au courant du monde Rock!</string>
     <string name="lowScore">\nPouvez-vous faire mieux!</string>
     <string name="results">Résultats de RockWiz</string>
+    <string name="rush">Quel est le dernier album de Rush?</string>
+    <string name="description_image">Une image du groupe</string>
 
 </resources>

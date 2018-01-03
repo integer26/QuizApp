@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox wrong2;
     CheckBox right1;
     CheckBox right2;
-    RadioGroup rgPink;
+    RadioGroup rgEag;
     RadioGroup rgGen;
     RadioGroup rgNir;
     RadioGroup rgRock;
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup rgQueen;
     RadioGroup rgU2;
     RadioGroup rgJam;
+    RadioGroup rgRush;
     TextView recap;
 
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         wrong2 = findViewById(R.id.sbPink2);
         right1 = findViewById(R.id.corrPink);
         right2 = findViewById(R.id.corrPink1);
-        rgPink = findViewById(R.id.eagles);
+        rgEag = findViewById(R.id.eagles);
         rgGen = findViewById(R.id.genesis);
         rgNir = findViewById(R.id.nirvana);
         rgRock = findViewById(R.id.rock);
@@ -68,22 +69,22 @@ public class MainActivity extends AppCompatActivity {
         rgQueen = findViewById(R.id.queen);
         rgU2 = findViewById(R.id.u2);
         rgJam = findViewById(R.id.jam);
+        rgRush = findViewById(R.id.rush);
         recap = findViewById(R.id.recap);
-
-
 
     }
 
 
+
     /**
-     * This method allows the user to answer by text (number) input
-     *
+     * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Short Length
      * @param view
      */
 
-    public void checkMetallica(View view)
+    public void scopri(View view) {
 
-    {
+        //new code
+
         String nome = nMembri.getText().toString();
 
         if(nome.equals("4")){
@@ -94,16 +95,6 @@ public class MainActivity extends AppCompatActivity {
             nMembri.setTextColor(Color.RED);
         }
 
-    }
-
-    /**
-     * This method allows the user to answer by checking multiple correct answers
-     * @param view
-     */
-
-    public void checkPink(View view)
-
-    {
 
         boolean checked;
         boolean checked2;
@@ -128,272 +119,248 @@ public class MainActivity extends AppCompatActivity {
 
             corrette = corrette + 2;
         }
-    }
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkEagles(View view)
-
-    {
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgPink.getCheckedRadioButtonId();
+        int checkedRadio = rgEag.getCheckedRadioButtonId();
 
         RadioButton corretto = findViewById(R.id.corrEag);
-        RadioButton radio = findViewById(checked);
+        RadioButton radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgEag.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
+        /**
+         * The int checked has the id of checked RadioButto
+         */
+        checkedRadio = rgGen.getCheckedRadioButtonId();
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkGenesis(View view)
+        corretto = findViewById(R.id.corrGen);
+        radio = findViewById(checkedRadio);
 
-    {
+        if (rgGen.getCheckedRadioButtonId() == -1) {
+
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
+        }
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgGen.getCheckedRadioButtonId();
+        checkedRadio = rgNir.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrGen);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrNir);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgNir.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
-
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkNirvana(View view)
-
-    {
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgNir.getCheckedRadioButtonId();
+        checkedRadio = rgRock.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrNir);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrRock);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgRock.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkRock(View view)
-
-    {
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgRock.getCheckedRadioButtonId();
+        checkedRadio = rgLed.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrRock);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrZepp);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgLed.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
-
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkLedZeppelin(View view)
-
-    {
-        /**
-         * The int checked has the id of checked RadioButto
-         */
-        int checked = rgLed.getCheckedRadioButtonId();
-
-        RadioButton corretto = findViewById(R.id.corrZepp);
-        RadioButton radio = findViewById(checked);
-
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
-
-            radio.setTextColor(Color.RED);
-        }
-    }
-
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkElvis(View view)
-
-    {
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgElvis.getCheckedRadioButtonId();
+        checkedRadio = rgElvis.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrElv);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrElv);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgElvis.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-
-    public void checkBeatles(View view)
-
-    {
         /**
          * The int checked has the id of checked RadioButto
          */
 
-        int checked = rgBeat.getCheckedRadioButtonId();
+        checkedRadio = rgBeat.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrBeat);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrBeat);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgBeat.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
-
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-
-    public void checkQueen(View view)
-
-    {
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgQueen.getCheckedRadioButtonId();
+        checkedRadio = rgQueen.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrQue);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrQue);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgQueen.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-    public void checkU2(View view)
-
-    {
 
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgU2.getCheckedRadioButtonId();
+        checkedRadio = rgU2.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrU2);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrU2);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgU2.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
 
-    /**
-     * This method allows The user to answer by checking a radio button so a single possible correct answer
-     * @param view
-     */
-
-    public void checkPearlJam(View view)
-
-    {
         /**
          * The int checked has the id of checked RadioButto
          */
-        int checked = rgJam.getCheckedRadioButtonId();
+        checkedRadio = rgJam.getCheckedRadioButtonId();
 
-        RadioButton corretto = findViewById(R.id.corrJam);
-        RadioButton radio = findViewById(checked);
+        corretto = findViewById(R.id.corrJam);
+        radio = findViewById(checkedRadio);
 
-        if(radio == corretto){
-            corretto.setTextColor(Color.GREEN);
-            corrette++;
-        }else{
+        if (rgJam.getCheckedRadioButtonId() == -1) {
 
-            radio.setTextColor(Color.RED);
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
         }
-    }
 
-    /**
-     * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Short Length
-     * @param view
-     */
+        /**
+         * The int checked has the id of checked RadioButto
+         */
+        checkedRadio = rgRush.getCheckedRadioButtonId();
 
-    public void scopri(View view){
+        corretto = findViewById(R.id.corrrush);
+        radio = findViewById(checkedRadio);
 
+        if (rgRush.getCheckedRadioButtonId() == -1) {
+
+        } else {
+
+            if (radio == corretto) {
+                corretto.setTextColor(Color.GREEN);
+                corrette++;
+            } else {
+
+                radio.setTextColor(Color.RED);
+            }
+        }
+
+        //end new
         if(corrette < 3){
             testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
         }else if(corrette >= 3 && corrette <= 6){
             testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.lowScore);
-        }else if(corrette > 6 && corrette < 10){
+        } else if (corrette > 6 && corrette <= 10) {
             testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.midScore);
-        }else if(corrette >=10){
+        } else if (corrette >= 11) {
             testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.highScore);
         }
 
