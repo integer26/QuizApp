@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
      */
 
     int corrette = 0;
-    String testoRecap = "";
     EditText nMembri;
     CheckBox wrong1;
     CheckBox wrong2;
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup rgU2;
     RadioGroup rgJam;
     RadioGroup rgRush;
-    TextView recap;
+    String username;
 
 
 
@@ -48,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /**
-         * Prevent the keyboard to pop up automatically
-         */
+        //Prevent the keyboard to pop up automatically
+
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         //View Declarations in onCreate to improve CPU cycles
@@ -70,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
         rgU2 = findViewById(R.id.u2);
         rgJam = findViewById(R.id.jam);
         rgRush = findViewById(R.id.rush);
-        recap = findViewById(R.id.recap);
 
+        Intent intent = getIntent();
+        username = intent.getExtras().getString("username");
     }
 
 
@@ -118,6 +117,9 @@ public class MainActivity extends AppCompatActivity {
         if(checked && checked2 ){
 
             corrette = corrette + 2;
+        } else if (checked || checked2) {
+
+            corrette++;
         }
 
         /**
@@ -353,38 +355,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        //end new
-        if(corrette < 3){
-            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
-        }else if(corrette >= 3 && corrette <= 6){
-            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.lowScore);
-        } else if (corrette > 6 && corrette <= 10) {
-            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.midScore);
-        } else if (corrette >= 11) {
-            testoRecap = getString(R.string.score) + " " + corrette + getString(R.string.highScore);
-        }
-
-        recap.setText(testoRecap);
-
-        Context context = getApplicationContext();
-        CharSequence text = testoRecap;
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        //Launches the Recap activity
+        Intent i = new Intent(MainActivity.this, Recap.class);
+        i.putExtra("corrette", corrette);
+        i.putExtra("username", username);
+        startActivity(i);
     }
 
-    /**
-     * When the button is clicked it lounces an Intent that opens gmail (or only an email app) and allows the user to send the recap content via mail
-     * @param view
-     */
-    public void inviaEmail(View view) {
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.results));
-        intent.putExtra(Intent.EXTRA_TEXT, testoRecap);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
-    }
 }

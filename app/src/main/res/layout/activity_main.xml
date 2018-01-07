@@ -16,6 +16,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -59,6 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -72,7 +78,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/pinkfloyd" />
 
@@ -121,6 +126,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -133,7 +141,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/eagles" />
 
@@ -143,7 +150,6 @@
                     android:padding="@dimen/padding_margin"
                     android:text="@string/eagles"
                     android:textSize="@dimen/text_size" />
-
 
                 <RadioGroup
                     android:id="@+id/eagles"
@@ -179,6 +185,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -236,6 +245,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -248,7 +260,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/nirvana" />
 
@@ -293,6 +304,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -305,7 +319,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/rock" />
 
@@ -351,6 +364,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -363,7 +379,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/zeppelin" />
 
@@ -409,6 +424,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -421,7 +439,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/elvis" />
 
@@ -431,7 +448,6 @@
                     android:padding="@dimen/padding_margin"
                     android:text="@string/elvis"
                     android:textSize="@dimen/text_size" />
-
 
                 <RadioGroup
                     android:id="@+id/elvis"
@@ -467,6 +483,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -479,7 +498,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/beatles" />
 
@@ -525,6 +543,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -537,7 +558,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/freddie" />
 
@@ -583,6 +603,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -595,7 +618,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/u2" />
 
@@ -641,6 +663,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -653,7 +678,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/pearljam3" />
 
@@ -663,7 +687,6 @@
                     android:padding="@dimen/padding_margin"
                     android:text="@string/pearl"
                     android:textSize="@dimen/text_size" />
-
 
                 <RadioGroup
                     android:id="@+id/jam"
@@ -698,6 +721,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/card_padding_bottom"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
             card_view:cardCornerRadius="@dimen/card_border_radius"
             card_view:cardElevation="@dimen/card_elevation">
 
@@ -710,7 +736,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/image_height"
                     android:contentDescription="@string/description_image"
-                    android:paddingTop="@dimen/padding_margin"
                     android:scaleType="centerCrop"
                     android:src="@drawable/rush" />
 
@@ -761,27 +786,11 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/padding_margin"
                 android:onClick="scopri"
                 android:text="@string/PointButton" />
 
-            <TextView
-                android:id="@+id/recap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/padding_margin"
-                android:text=""
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/text_size" />
-
-            <Button
-                android:id="@+id/mail"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/padding_margin"
-                android:onClick="inviaEmail"
-                android:text="@string/emailButton" />
         </LinearLayout>
 
     </LinearLayout>

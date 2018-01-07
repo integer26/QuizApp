@@ -25,4 +25,7 @@
     <string name="results">Risultati del RockQuiz</string>
     <string name="rush">Qual è l\'ultimo album dei Rush?</string>
     <string name="description_image">Immaginde del gruppo in questione</string>
+    <string name="background_image">Immagine di sfondo</string>
+    <string name="quiztitleDescr">Titolo del Quiz</string>
+    <string name="exit">Esci</string>
 </resources>

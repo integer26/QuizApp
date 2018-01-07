@@ -25,5 +25,8 @@
     <string name="results">Résultats de RockWiz</string>
     <string name="rush">Quel est le dernier album de Rush?</string>
     <string name="description_image">Une image du groupe</string>
+    <string name="background_image">Image de fond</string>
+    <string name="quiztitleDescr">" 15/5000 Titre du quiz"</string>
+    <string name="exit">Quitter</string>
 
 </resources>

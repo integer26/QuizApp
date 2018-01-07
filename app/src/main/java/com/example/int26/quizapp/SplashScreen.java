@@ -14,7 +14,7 @@ public class SplashScreen extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_screen);
-        final Intent mioIntent = new Intent(getApplicationContext(),MainActivity.class);
+        final Intent mioIntent = new Intent(getApplicationContext(), Login.class);
 
         Thread mioThread = new Thread(){
 

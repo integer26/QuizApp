@@ -61,4 +61,10 @@
     <string name="signals" translatable="false">Signals</string>
     <string name="clockwork_angels" translatable="false">Clockwork Angels</string>
     <string name="description_image">An image for the Band</string>
+    <string name="reset_quiz" translatable="false">Reset Quiz</string>
+    <string name="loginButton" translatable="false">Login</string>
+    <string name="quiztitleDescr">QuizTitle</string>
+    <string name="background_image">Background Image</string>
+    <string name="usernameHint" translatable="false">Username</string>
+    <string name="exit">Exit</string>
 </resources>
