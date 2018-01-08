@@ -64,20 +64,13 @@
                         android:text="@string/emailButton" />
 
                     <Button
-                        android:id="@+id/reset"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:onClick="reset"
-                        android:text="@string/reset_quiz" />
-
-                    <Button
                         android:id="@+id/exit"
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="exit"
                         android:text="@string/exit" />
+
                 </LinearLayout>
 
             </RelativeLayout>

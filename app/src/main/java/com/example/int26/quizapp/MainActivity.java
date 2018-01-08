@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     int corrette = 0;
+    int nothingChecked = 0; //see if the user gives answers
     EditText nMembri;
     CheckBox wrong1;
     CheckBox wrong2;
@@ -39,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup rgJam;
     RadioGroup rgRush;
     String username;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,12 +71,14 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         username = intent.getExtras().getString("username");
-    }
 
+
+    }
 
 
     /**
      * When the button is clicked it shows a recap in the TxtView and also a Toast notification that has a Short Length
+     *
      * @param view
      */
 
@@ -86,10 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
         String nome = nMembri.getText().toString();
 
-        if(nome.equals("4")){
+        if (nome.equals("4")) {
             nMembri.setTextColor(Color.GREEN);
             corrette++;
-        }else{
+            nothingChecked++;
+        } else {
 
             nMembri.setTextColor(Color.RED);
         }
@@ -98,23 +101,27 @@ public class MainActivity extends AppCompatActivity {
         boolean checked;
         boolean checked2;
 
-        if(checked=wrong1.isChecked()){
+        if (checked = wrong1.isChecked()) {
             wrong1.setTextColor(Color.RED);
+            nothingChecked++;
         }
-        if(checked=wrong2.isChecked()){
+        if (checked = wrong2.isChecked()) {
             wrong2.setTextColor(Color.RED);
+            nothingChecked++;
         }
-        if(checked=right1.isChecked()){
+        if (checked = right1.isChecked()) {
             right1.setTextColor(Color.GREEN);
+            nothingChecked++;
         }
-        if (checked = right2.isChecked()){
+        if (checked = right2.isChecked()) {
             right2.setTextColor(Color.GREEN);
+            nothingChecked++;
         }
 
-        checked=right1.isChecked();
-        checked2=right2.isChecked();
+        checked = right1.isChecked();
+        checked2 = right2.isChecked();
 
-        if(checked && checked2 ){
+        if (checked && checked2) {
 
             corrette = corrette + 2;
         } else if (checked || checked2) {
@@ -141,7 +148,10 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
+
         /**
          * The int checked has the id of checked RadioButto
          */
@@ -161,6 +171,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -182,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -203,6 +217,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
 
@@ -225,6 +241,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -246,6 +264,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -268,6 +288,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -289,6 +311,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
 
@@ -311,6 +335,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -332,6 +358,8 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
         /**
@@ -353,8 +381,28 @@ public class MainActivity extends AppCompatActivity {
 
                 radio.setTextColor(Color.RED);
             }
+
+            nothingChecked++;
         }
 
+        if (nothingChecked == 0) {
+            //Make a LONG Toast notification if no answer is present
+            Context context = getApplicationContext();
+            CharSequence text = getString(R.string.ToastMainNoAnswer);
+            int duration = Toast.LENGTH_LONG;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        } else {
+
+            //Make a LONG Toast notification if at least one answer is given
+            Context context = getApplicationContext();
+            CharSequence text = getString(R.string.ToastMainComplete);
+            int duration = Toast.LENGTH_LONG;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
 
     }
 
@@ -366,5 +414,4 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("username", username);
         startActivity(i);
     }
-
 }

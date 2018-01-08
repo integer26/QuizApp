@@ -20,8 +20,8 @@
     <dimen name="textLoginButtonSize">18sp</dimen>
     <dimen name="margintopLoginButton">95dp</dimen>
     <dimen name="topmarginEditTlogin">55dp</dimen>
-    <dimen name="paddingStartEditLogin">50dp</dimen>
-    <dimen name="paddingEndEditLogin">50dp</dimen>
+    <dimen name="paddingStartEditLogin">60dp</dimen>
+    <dimen name="paddingEndEditLogin">40dp</dimen>
     <dimen name="ImageViewRecapWidth">250dp</dimen>
     <dimen name="ImageViewRecapHeight">110dp</dimen>
     <dimen name="ImageViewRecapPaddingTop">16dp</dimen>

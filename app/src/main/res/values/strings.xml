@@ -68,4 +68,7 @@
     <string name="usernameHint" translatable="false">Username</string>
     <string name="exit">Exit</string>
     <string name="partial">Results</string>
+    <string name="ToastMainComplete">Now you can see your answers. Click the next button to discover your complete results!</string>
+    <string name="ToastMainNoAnswer">You must give at least one answer</string>
+    <string name="noUserName">You did not enter a username</string>
 </resources>

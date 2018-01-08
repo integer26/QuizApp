@@ -21,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run(){
                 try {
-                    sleep(3000);
+                    sleep(1300);
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -39,5 +39,3 @@ public class SplashScreen extends AppCompatActivity {
         mioThread.start();
     }
 }
-
-

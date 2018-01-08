@@ -1,5 +1,6 @@
 package com.example.int26.quizapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -28,8 +29,8 @@ public class Recap extends AppCompatActivity {
         Intent intent = getIntent();
         int corrette = intent.getIntExtra("corrette", 0);
         username = intent.getExtras().getString("username");
-        //Set the text when the activity is created
 
+        //Set the text when the activity is created
         if (corrette < 3) {
             testoRecap = username + " " + getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
         } else if (corrette >= 3 && corrette <= 6) {
@@ -43,13 +44,6 @@ public class Recap extends AppCompatActivity {
         //Set the text into the testview of the recap
         recap.setText(testoRecap);
 
-        //Make a LONG Toast notification
-        Context context = getApplicationContext();
-        CharSequence text = testoRecap;
-        int duration = Toast.LENGTH_LONG;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
     }
 
     /**
@@ -67,14 +61,6 @@ public class Recap extends AppCompatActivity {
         }
     }
 
-    public void reset(View view) {
-
-        Intent i = getBaseContext().getPackageManager()
-                .getLaunchIntentForPackage(getBaseContext().getPackageName());
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(i);
-        System.exit(0);
-    }
 
     /**
      * This method ends the app

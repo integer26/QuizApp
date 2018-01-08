@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -39,9 +40,14 @@ public class Login extends AppCompatActivity {
 
         usesrnamestor = username.getText().toString();
 
-        Intent intent = new Intent(Login.this, MainActivity.class);
-        intent.putExtra("username", usesrnamestor);
-        startActivity(intent);
+        if (usesrnamestor.matches("")) {
+
+            Toast.makeText(this, R.string.noUserName, Toast.LENGTH_SHORT).show();
+        } else {
+            Intent intent = new Intent(Login.this, MainActivity.class);
+            intent.putExtra("username", usesrnamestor);
+            startActivity(intent);
+        }
     }
 
 }
