@@ -29,5 +29,8 @@
     <string name="quiztitleDescr">" 15/5000 Titre du quiz"</string>
     <string name="exit">Quitter</string>
     <string name="partial">Résultats</string>
+    <string name="ToastMainComplete">Maintenant vous pouvez voir vos réponses. Cliquez sur le bouton suivant pour découvrir vos résultats complets!</string>
+    <string name="ToastMainNoAnswer">Vous devez donner au moins une réponse</string>
+    <string name="noUserName">Vous n\'avez pas entré de nom d\'utilisateur</string>
 
 </resources>

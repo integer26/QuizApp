@@ -29,4 +29,7 @@
     <string name="quiztitleDescr">Titolo del Quiz</string>
     <string name="exit">Esci</string>
     <string name="partial">Risultati</string>
+    <string name="ToastMainComplete">Ora puoi vedere i tuoi risultati. Clicca l\'altro pulsante per vedere i dettagli</string>
+    <string name="ToastMainNoAnswer">Devi fornire almeno una risposta</string>
+    <string name="noUserName">Non hai inserito un username</string>
 </resources>
