@@ -14,7 +14,7 @@
     <string name="pearl">In 1991 he released the first album of Pearl Jam, which is titled ...</string>
     <string name="metallicahint" translatable="false">10</string>
     <string name="buttonText">Check!</string>
-    <string name="PointButton">Discover your score!</string>
+    <string name="PointButton">Discover the details</string>
     <string name="emailButton">Send by email</string>
     <string name="sbPink" translatable="false">Yellow</string>
     <string name="corrPinkOne" translatable="false">Pigs</string>
@@ -67,4 +67,5 @@
     <string name="background_image">Background Image</string>
     <string name="usernameHint" translatable="false">Username</string>
     <string name="exit">Exit</string>
+    <string name="partial">Results</string>
 </resources>

@@ -14,7 +14,7 @@
     <string name="u2">Gli U2 prima degli U2: come si chiamava in origine la band di Bono Vox?</string>
     <string name="pearl">Nel 1991 esce il primo album dei Pearl Jam, che si intitola...</string>
     <string name="buttonText">Verifica!</string>
-    <string name="PointButton">Scopri il tuo Punteggio!</string>
+    <string name="PointButton">Scopri i Dettagli</string>
     <string name="emailButton">Invia tramite email</string>
     <string name="wrongQueen">Londra</string>
     <string name="score">Il tuo punteggio è: </string>
@@ -28,4 +28,5 @@
     <string name="background_image">Immagine di sfondo</string>
     <string name="quiztitleDescr">Titolo del Quiz</string>
     <string name="exit">Esci</string>
+    <string name="partial">Risultati</string>
 </resources>

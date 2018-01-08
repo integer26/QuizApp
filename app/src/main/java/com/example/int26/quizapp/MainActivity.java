@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
 
-    public void scopri(View view) {
+    public void risultati(View view) {
 
         //new code
 
@@ -354,6 +354,11 @@ public class MainActivity extends AppCompatActivity {
                 radio.setTextColor(Color.RED);
             }
         }
+
+
+    }
+
+    public void scopri(View view) {
 
         //Launches the Recap activity
         Intent i = new Intent(MainActivity.this, Recap.class);

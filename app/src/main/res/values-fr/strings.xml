@@ -14,7 +14,7 @@
     <string name="u2">U2 avant U2: quel était le nom original du groupe Bono Vox?</string>
     <string name="pearl">En 1991, il sort le premier album de Pearl Jam, intitulé ...</string>
     <string name="buttonText">Vérifier!</string>
-    <string name="PointButton">Découvrez votre score!</string>
+    <string name="PointButton">Découvrez les détails</string>
     <string name="emailButton">"Envoyé par email "</string>
     <string name="wrongQueen">Londres</string>
     <string name="score">Votre score est: </string>
@@ -28,5 +28,6 @@
     <string name="background_image">Image de fond</string>
     <string name="quiztitleDescr">" 15/5000 Titre du quiz"</string>
     <string name="exit">Quitter</string>
+    <string name="partial">Résultats</string>
 
 </resources>
