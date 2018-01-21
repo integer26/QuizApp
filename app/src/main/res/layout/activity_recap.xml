@@ -47,7 +47,22 @@
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/text_size" />
 
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/linearLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="35dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.1" />
+
+
                 <LinearLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -63,6 +78,8 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="#617d8a"
                         android:onClick="inviaEmail"
+                        android:paddingEnd="@dimen/RecapPaddingEmailButton"
+                        android:paddingStart="@dimen/RecapPaddingEmailButton"
                         android:text="@string/emailButton"
                         android:textColor="@android:color/white"
                         app:rd_enable="true" />

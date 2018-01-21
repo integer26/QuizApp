@@ -28,4 +28,5 @@
     <dimen name="cardRecapWidth">330dp</dimen>
     <dimen name="cardRecapHeight">550dp</dimen>
     <dimen name="LoginUsernameSize">20sp</dimen>
+    <dimen name="RecapPaddingEmailButton">10dp</dimen>
 </resources>

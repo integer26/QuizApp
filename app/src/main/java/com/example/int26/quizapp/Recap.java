@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,21 +25,26 @@ public class Recap extends AppCompatActivity {
         //Finds the TextView
 
         recap = findViewById(R.id.recapText);
+        RatingBar rating = findViewById(R.id.rating);
 
         //Get in the integer in the previous activity
         Intent intent = getIntent();
         int corrette = intent.getIntExtra("corrette", 0);
         username = intent.getExtras().getString("username");
 
-        //Set the text when the activity is created
+        //Set the text when the activity is created and the stars evaluation
         if (corrette < 3) {
             testoRecap = username + " " + getString(R.string.score) + " " + corrette + getString(R.string.zeroScore);
+            rating.setRating(0);
         } else if (corrette >= 3 && corrette <= 6) {
             testoRecap = username + " " + getString(R.string.score) + " " + corrette + getString(R.string.lowScore);
+            rating.setRating(2);
         } else if (corrette > 6 && corrette <= 10) {
             testoRecap = username + " " + getString(R.string.score) + " " + corrette + getString(R.string.midScore);
+            rating.setRating(4);
         } else if (corrette >= 11) {
             testoRecap = username + " " + getString(R.string.score) + " " + corrette + getString(R.string.highScore);
+            rating.setRating(5);
         }
 
         //Set the text into the testview of the recap

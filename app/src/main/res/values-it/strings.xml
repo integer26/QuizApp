@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Quiz App</string>
     <string name="metallica">Da quanti componenti è formata la band Metallica?</string>
-    <string name="pinkfloyd">Quale di queste canzoni appartiene ai Pink Floyd?</string>
+    <string name="pinkfloyd">Qualei tra queste canzoni appartiene ai Pink Floyd?</string>
     <string name="eagles">Chi era il batterista degli Eagles?</string>
     <string name="genesis">Quale di queste canzoni appartiene ai Genesis?</string>
     <string name="nirvana">In che anno si sono formati i Nirvana?</string>
