@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prinicpe"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -40,10 +42,12 @@
             android:paddingStart="@dimen/paddingStartEditLogin"
             android:text=""
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/LoginUsernameSize" />
 
-        <Button
+        <com.rey.material.widget.Button
             android:id="@+id/loginButton"
+            style="@style/Material.Drawable.Ripple.Wave"
             android:layout_width="@dimen/loginBottone"
             android:layout_height="wrap_content"
             android:layout_below="@id/editLogin"
@@ -53,7 +57,8 @@
             android:onClick="login"
             android:text="@string/loginButton"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textLoginButtonSize" />
+            android:textSize="@dimen/textLoginButtonSize"
+            app:rd_enable="true" />
 
 
     </RelativeLayout>

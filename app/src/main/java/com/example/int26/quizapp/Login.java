@@ -1,5 +1,7 @@
 package com.example.int26.quizapp;
 
+import android.animation.Animator;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -7,9 +9,11 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
@@ -29,6 +33,7 @@ public class Login extends AppCompatActivity {
 
         username = findViewById(R.id.editLogin);
         login = findViewById(R.id.loginButton);
+
 
     }
 

@@ -1,5 +1,6 @@
 package com.example.int26.quizapp;
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -412,6 +413,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, Recap.class);
         i.putExtra("corrette", corrette);
         i.putExtra("username", username);
-        startActivity(i);
+
+        ActivityOptions options = ActivityOptions.makeScaleUpAnimation(view,
+                0,
+                0,
+                view.getWidth(),
+                view.getHeight());
+        startActivity(i, options.toBundle());
+
+
     }
 }

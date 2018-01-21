@@ -27,4 +27,5 @@
     <dimen name="ImageViewRecapPaddingTop">16dp</dimen>
     <dimen name="cardRecapWidth">330dp</dimen>
     <dimen name="cardRecapHeight">550dp</dimen>
+    <dimen name="LoginUsernameSize">20sp</dimen>
 </resources>
