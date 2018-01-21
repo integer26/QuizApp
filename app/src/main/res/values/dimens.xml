@@ -18,8 +18,8 @@
     <dimen name="cardElevationRecap">12dp</dimen>
     <dimen name="loginRectdimension">45dp</dimen>
     <dimen name="textLoginButtonSize">18sp</dimen>
-    <dimen name="margintopLoginButton">95dp</dimen>
-    <dimen name="topmarginEditTlogin">55dp</dimen>
+    <dimen name="margintopLoginButton">75dp</dimen>
+    <dimen name="topmarginEditTlogin">35dp</dimen>
     <dimen name="paddingStartEditLogin">60dp</dimen>
     <dimen name="paddingEndEditLogin">40dp</dimen>
     <dimen name="ImageViewRecapWidth">250dp</dimen>
