@@ -22,17 +22,18 @@
             android:id="@+id/scritta"
             android:layout_width="@dimen/widthScrittaLogin"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/scrittaLogin"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/loginButton"
+            android:layout_marginTop="112dp"
             android:src="@drawable/scritta" />
 
         <EditText
             android:id="@+id/editLogin"
             android:layout_width="@dimen/rettangoloWidth"
             android:layout_height="@dimen/loginRectdimension"
-            android:layout_below="@id/scritta"
+            android:layout_below="@+id/scritta"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/topmarginEditTlogin"
+            android:layout_marginTop="30dp"
             android:background="@drawable/rettangolo"
             android:cursorVisible="false"
             android:hint="@string/usernameHint"
